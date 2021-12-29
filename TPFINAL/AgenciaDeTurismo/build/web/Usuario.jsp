@@ -88,10 +88,9 @@
 
                                 <form action="SvEmpleado" method="POST">
                                     <p><label>Nombre del usuario: </label><input type="text" name="nombreUsu"></p>
-                                    <p><label>Contraseña: </label><input type="password" name="contrasenia"></p>
+                                    <p><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contraseña: </label><input type="password" name="contrasenia"></p>
                                     <BUTTON type="submit">Enviar</BUTTON>
                                 </form>
-
                             </div>
                         </div>
                     </div>

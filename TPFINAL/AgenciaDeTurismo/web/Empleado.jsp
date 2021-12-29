@@ -98,7 +98,7 @@
                                     <p><label>Apellido: </label><input type="text" name="apellido"></p>
                                     <p><label>Direccion: </label><input type="text" name="direccion"></p>
                                     <p><label>DNI: </label><input type="text" name="dni"></p>
-                                    <label for="start">Fecha de Nacimiento:</label>
+                                    <label for="start">Fec. de Nac.:</label>
                                     <input type="date" id="start" name="fecha_nac"
                                            value="07-22-2018"
                                            min="1900-01-01" max="2100-12-31">
@@ -107,7 +107,7 @@
                                     <p><label>Email: </label><input type="text" name="email"></p>
                                     <p><label>Cargo: </label><input type="text" name="cargo"></p>
                                     <p><label>Sueldo: </label><input type="text" name="sueldo"></p>
-                                    <p><label>Nombre del usuario: </label><input type="text" name="nombreUsu"></p>
+                                    <p><label>Usuario: </label><input type="text" name="nombreUsu"></p>
                                     <p><label>Contraseña: </label><input type="password" name="contrasenia"></p>
 
                                     <BUTTON type="submit">Enviar</BUTTON>
