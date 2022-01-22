@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Usuario
-    Created on : 14/12/2021, 07:48:25
+    Document   : Alta Empleado
+    Created on : 14/12/2021, 07:43:45
     Author     : lucquifer
 --%>
 
@@ -20,15 +20,9 @@
             <div class="header">
                 <a class="menu-icon" href="#">
                 </a>
+
                 <img class="logo" src="index_archivos/Silicome.webp">
                 <div class="header-menu">
-                    <a href="Usuario.jsp">Usuario</a>
-                    <a href="Cliente.jsp">Cliente Nuevo</a>
-                    <a href="Empleado.jsp">Empleado Nuevo</a>
-                    <a href="Ventas.jsp">Ventas</a>
-                    <a href="Paquete.jsp">Paquete</a>
-                    <a href="Servicio.jsp">Servicio</a>
-                    <a href="Clientes.jsp">Clientes Existentes</a>
                 </div>
                 <div class="header-icons">
                 </div>
@@ -43,21 +37,6 @@
                                 <h1 class="main-title">Coral</h1>
                                 <h2 class="main-subtitle">€ 39.90</h2>
                             </div>
-                            <div class="main-content">
-                                <div class="main-content__title">We will have lost 60% of our coral reefs by 2030.
-                                </div>
-                                <div class="main-content__subtitle">Coral reefs are essential to humans, as they protect the shorelines and are a source of
-                                    nutrients and habitat for thousands of marine species.</div>
-                                <div class="more-menu">
-                                    Shop Now
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <line x1="-5" y1="12" x2="19" y2="12"></line>
-                                    <line x1="15" y1="16" x2="19" y2="12"></line>
-                                    <line x1="15" y1="8" x2="19" y2="12"></line>
-                                    </svg>
-                                </div>
-                            </div>
                         </div>
                         <div class="center">
                             <div class="right-side__img">
@@ -69,38 +48,51 @@
 
 
 
+
+
+
                     <div class="main swiper-slide swiper-slide-next" id="savanna" data-swiper-slide-index="1" style="width: 1023px; transition-duration: 0ms; opacity: 0; transform: translate3d(-2046px, 0px, 0px);" role="group" aria-label="2 / 4">
                         <div class="left-side">
                             <div class="main-wrapper">
-                                <h3 class="main-header">Usuario</h3>
-                                <h1 class="main-title">INTERFAZ DE USUARIO</h1>
+                                <h3 class="main-header">Empleados</h3>
+                                <h1 class="main-title">Alta de nuevos empleados</h1>
                                 <h2 class="main-subtitle"></h2>
                             </div>
                             <div class="main-content">
                                 <div class="main-content__title">
                                 </div>
                                 <div class="main-content__subtitle"></div>
-
+                                <div class="more-menu">
+                                </div>
                             </div>
                         </div>
                         <div class="center">
-                            <div class="right-side__img">
+                            <form action="SvAltaEmpleado" method="POST">
 
-                                <form action="SvEmpleado" method="POST">
-                                    <p><label>Nombre del usuario: </label><input type="text" name="nombreUsu"></p>
-                                    <p><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contraseña: </label><input type="password" name="contrasenia"></p>
-                                    <BUTTON type="submit">Enviar</BUTTON>
-                                </form>
-                            </div>
+                                <label>Nombre: </label><input type="text" name="nombre">
+                                <label>Apellido: </label><input type="text" name="apellido">
+                                <label>Direccion: </label><input type="text" name="direccion">
+                                <label>DNI: </label><input type="text" name="dni"></p>
+
+                                <label for="start">Fec. de Nac.:</label><br>
+                                <input type="date" id="start" name="fecha_nac"
+                                       value="07-22-2018"
+                                       min="1900-01-01" max="2100-12-31">
+                                
+                                <label>Nacionalidad: </label><input type="text" name="nacionalidad">
+                                <label>Celular: </label><input type="text" name="celular">
+                                <label>Email: </label><input type="text" name="email">
+                                <label>Cargo: </label><input type="text" name="cargo">
+                                <label>Sueldo: </label><input type="text" name="sueldo">
+                                <label>Usuario: </label><input type="text" name="nombreUsu">
+                                <label>Contraseña: </label><input type="password" name="contrasenia">
+
+                                <input type="submit" value="Crear Empleado"><br>
+                            </form>
+
                         </div>
                     </div>
-
-
-
                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
                 <script src="js/swiper-bundle.js"></script><script src="js/script.js"></script>
-
-
-
                 </body></html>

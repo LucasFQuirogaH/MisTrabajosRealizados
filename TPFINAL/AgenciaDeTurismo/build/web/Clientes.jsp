@@ -4,6 +4,8 @@
     Author     : Lucas F. Quiroga
 --%>
 
+<%@page import="java.util.Collections.list(Enumeration)"%>
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en"><head>
@@ -112,6 +114,37 @@
                                     </tbody>
                                     </thead>
                                     <tbody style="background: rgba(0 , 0 , 255 , 0.3); border: 1px solid rgba(100, 200, 0, 0.3);">
+                                       <% HttpSession misession = request.getSession();
+                                        List <Persona> listaPersonas = (List)request.getSession().getAttribute("listaPersonas");
+                                        for (Persona per : listaPersonas){
+                                        }
+                                        
+                                       %>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
                                         <tr>
                                             <th>15/07</th>
                                             <td>$200,00</td>
